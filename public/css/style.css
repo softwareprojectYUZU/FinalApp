@@ -1144,10 +1144,7 @@ button {
    
    -webkit-touch-callout: none;
  }
- 
- /*
-  * Just a quick hamburger
-  */
+
  #menuToggle span
  {
    display: block;
@@ -1178,10 +1175,7 @@ button {
    transform-origin: 0% 100%;
  }
  
- /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
+
  #menuToggle input:checked ~ span
  {
    opacity: 1;
@@ -1198,18 +1192,13 @@ button {
    transform: rotate(0deg) scale(0.2, 0.2);
  }
  
- /*
-  * Ohyeah and the last one should go the other direction
-  */
+ 
  #menuToggle input:checked ~ span:nth-last-child(2)
  {
    transform: rotate(-45deg) translate(0, -1px);
  }
  
- /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
+ 
  #menu
  {
    position: absolute;
@@ -1224,7 +1213,7 @@ button {
    
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
+  
    
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
@@ -1239,9 +1228,6 @@ button {
  
  }
  
- /*
-  * And let's slide it in from the left
-  */
  #menuToggle input:checked ~ ul
  {
    transform: none;
