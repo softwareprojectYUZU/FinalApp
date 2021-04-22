@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= userdetails.username%>'s Profile - YUZU</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ent7xro.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="heading-graphic">
+        <h1>YUZU</h1>
+        <!-- logo -->
+      </div>
+      <nav role="navigation">
+        <div id="menuToggle">
+          
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li class = "current">Profile</li></a>
+            <a href="/home"><li>Home</li></a>
+            <a href="/leaderboard"><li>Leaderboard</li></a>
+            <a href="/profile"><li>Profile</li></a>
+            <a href="/flashcards"><li>Flashcards</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+      <div class="profile-display">
+        <div id="display-pic">
+          <img src="/imgs/Icons/profileIcon.jpg" alt="Profile pic">
+          <!-- dispays users name and their score -->
+          <p>Welcome <%= userdetails.firstname%> <%= userdetails.lastname%></p>
+          <p>@<%= userdetails.username%></p>
+          <div id="score">
+            <p>Score: <%= userdetails.score%></p><br>
+          </div>
+          
+        </div>
+
+       
+      </div>
+
+   
+      <div class="profile-content">
+     
+<!-- displays dummy data of their most recently attempted flashcards -->
+        <div id="profile-flashcards">
+          <div class="profile-headings">
+            <h2>Flashcards</h2>
+            <h3>These are the flashcards you have recently attempted</h3>
+          </div>
+          <div id="flashcard-completion">
+            <div class="row">
+            <div class="column">
+              <a href="#">Ratio</a><br>
+            </div>
+        
+            <div class="column">
+              <a href="#">Area</a><br>
+             
+            </div>
+            <div class="column">
+              <a href="#">Division</a>
+            </div>
+ 
+          </div>
+           <div class="row">
+            <div class="column">
+              <a href="#">Ratio</a><br>
+            </div>
+            <div class="column">
+              <a href="#">Trigonometry</a><br>
+            </div>
+            <div class="column">
+              <a href="#">Area</a><br>
+              <p> <%= userdetails.attemptArr[0] %></p>
+            </div>
+            <div class="column">
+              <a href="#">Division</a>
+            </div>
+            <div class="column">
+              <a href="#">vision</a>
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+  </body>
+</html>

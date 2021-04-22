@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create Flashcards - YUZU</title>
+  
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ent7xro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <div class="heading-graphic">
+        <h1>YUZU</h1>
+            <!-- logo -->
+            <img src="/imgs/home/Logoyuzu.png" alt="Logo">
+      </div><br>
+      
+      <nav role="navigation">
+        <div id="menuToggle">
+          
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <!-- nav bar -->
+            <a href="#"><li class = "current">Create</li></a>
+            <a href="/home"><li>Home</li></a>
+            <a href="/leaderboard"><li>Leaderboard</li></a>
+            <a href="/profile"><li>Profile</li></a>
+            <a href="/flashcards"><li>Flashcards</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+<!-- user input of flashcard title, prerenders flashcard title of user has already entered title -->
+    <div class="flashcard-options-wrapper">
+      <form action="created" method="POST">
+        <div id="topicTitle">
+        <h2>Topic</h2>
+        <input required value = "<%= flashcard.topic%>"type="text" name="topic" id="topic">
+      </div>
+      <div class="flashcard-options">
+      
+        
+        <!-- input question -->
+        <div id="question-flashcard" class=flashcard-create>
+          <h2>Question</h2>
+          <input required type="text" name="question" id="question">
+          
+      
+        </div><br>
+        <p></p>
+        <!-- input answer -->
+        <div id="answer-flashcard" class=flashcard-create>
+          <h2>Answer</h2>
+          <input required type="text" name="answer" id="answer">
+        </div>
+      </div><br>
+<!-- submits users inputs -->
+      <button type="submit" class="flashcard-buttons add-button">Add Card</button>
+      <!-- takes user back to home page -->
+      <a href="/flashcards/menu" type="submit" class="flashcard-buttons submit-button">Back to menu</a>
+    </form>
+
+    </div>
+
+  </body>
+</html>

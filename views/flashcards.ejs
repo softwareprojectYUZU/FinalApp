@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flashcards home - YUZU</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ent7xro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <div class="heading-graphic">
+        <h1>YUZU</h1>
+        
+        <img src="/imgs/home/Logoyuzu.png" alt="Logo">
+
+      </div><br>
+      
+      <nav role="navigation">
+        <div id="menuToggle">
+          
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+          <!-- nav menu -->
+            <a href="#"><li class = "current">Flashcards</li></a>
+            <a href="/home"><li>Home</li></a>
+            <a href="/leaderboard"><li>Leaderboard</li></a>
+            <a href="/profile"><li>Profile</li></a>
+            <a href="/flashcards"><li>Flashcards</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- option to pick create or attempt flashcards -->
+    <div class="flashcard-options-wrapper">
+      <div class="flashcard-options">
+        <div id="create-flashcard" class="flashcard-selection" style="cursor: pointer;" onclick="location.href='/flashcards/create'">
+            <h3>Create</h3>
+            <div class="notepad-box">
+              <div id="notepad-image">
+                <img src="imgs/flashcard_img/Group_29.png" alt="pencil line">
+              </div>
+
+            </div>
+        </div>
+        <br>
+        <p>OR</p><br>
+        <div id="practice-flashcard" class="flashcard-selection" style="cursor: pointer;" onclick="location.href='/flashcards/menu'">
+          <h3>View Flashcards</h3>
+          <div class="notepad-box">
+            <div id="notepad-image">
+              <img src="imgs/flashcard_img/Group_28.png" alt="pencil line">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

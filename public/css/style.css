@@ -1,0 +1,1248 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+
+
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #FF99C8;
+  font-family:'Roboto', sans-serif ;
+}
+
+
+
+/* the header will be present in most pages */
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  height: 22vh;
+  background-color: rgb(163, 64, 147);
+}
+
+header .heading-graphic {
+  display: flex;
+  justify-content: center;
+}
+
+header .heading-graphic h1 {
+  font-family: birra, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 90px;
+  color: #fff;
+  /* this opacity will be changed to 0 for animation */
+  opacity: 100;
+  text-align: center;
+}
+
+header .heading-graphic img {
+  padding: 1%;
+  width: 7%;
+  height: 7%;
+}
+
+.main-menu-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 10px;
+}
+
+.menu-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.menu-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.menu-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#menu-buttons img {
+  border-radius: 50%;
+}
+
+/*Home Button CSS*/
+#home-button {
+  position: relative;
+  left: 30%;
+
+}
+
+#home-button a {
+  position: relative;
+  top: 25%;
+  text-decoration: none;
+
+  font-family: birra, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+}
+
+/*End of Home Button CSS*/
+
+/* home.html START */
+.button-containers {
+  padding-top: 10%;
+  display: flex;
+  /*container is flexable when resizing*/
+  width: 80%;
+  /*keep 5% border left and 5% right side*/
+  margin: auto;
+  /*positions in center instead of left*/
+  min-height: 40%;
+  
+  align-items: center;
+}
+
+@media screen and (max-width:1300px){
+  .button-containers{
+    padding-top: 12%;
+  }
+}
+
+@media screen and (max-width:1080px){
+  .button-containers{
+    padding-top: 14%;
+  }
+}
+
+@media screen and (max-width:910px){
+  .button-containers{
+    padding-top: 16%;
+  }
+}
+
+@media screen and (max-width:795px){
+  .button-containers{
+    padding-top: 18%;
+  }
+}
+
+@media screen and (max-width:710px){
+  .button-containers{
+    padding-top: 20%;
+  }
+}
+
+@media screen and (max-width:640px){
+  .button-containers{
+    padding-top: 22%;
+  }
+}
+
+@media screen and (max-width:575px){
+  .button-containers{
+    padding-top: 24%;
+  }
+}
+
+@media screen and (max-width:500px){
+  .button-containers{
+    padding-top: 28%;
+  }
+}
+
+.button-containers2 {
+  
+  display: flex;
+  /*container is flexable when resizing*/
+  width: 80%;
+  /*keep 5% border left and 5% right side*/
+  margin: auto;
+  /*positions in center instead of left*/
+  align-items: center;
+}
+
+.button-pictures {
+  /*height: 200px; /*set height so images are not presented too large*/
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+ 
+  /*align text description in center*/
+
+}
+
+#round-buttons img {
+  border-radius: 50%;
+  /*makes buttons round*/
+}
+
+#round-buttons p {
+  font-size: 130%;
+}
+
+/* home.html END */
+
+/* index.html START */
+.signin-wrapper {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  transform: translate(-50%, -0%);
+  text-align: center;
+  display: block;
+
+}
+.signin-button a {
+  color: black;
+
+}
+
+.grid-container img {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 20%;
+  height: 105;
+
+}
+
+.grid-container h1 {
+  font-family: Birra, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 90px;
+
+  /* this opacity will be changed to 0 for animation */
+  opacity: 100;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signin-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease;
+
+}
+
+.LetMeIn:hover {
+  background-color: yellow;
+  color: white;
+  text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+
+}
+
+.LetMeIn {
+  text-decoration: none;
+  font-family: Birra, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+  display: block;
+  background-color: yellow;
+
+  border: 2px solid #fff;
+  border-radius: 25px 0 25px 0;
+  padding: 14px 35px;
+  overflow: hidden;
+  transition: all 1s ease;
+  transition: all 1s ease-out;
+
+}
+@media screen and (max-width:571px){
+
+  .grid-container img {
+    top: 10%;
+    
+  
+  }
+  .grid-container h1 {
+
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .signin-button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease;
+  
+  }
+}
+
+/* index.html END */
+
+/*Leaderboard Page STARTING */
+.leaderboard-content {
+  background-color: rgb(255, 255, 255);
+  border-collapse: collapse;
+  min-width: 400px;
+  margin: 25px 0;
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  padding-bottom: 10%;
+
+  left: 50%;
+  transform: translate(-50%, 15%);
+}
+
+.leaderboard-content thead tr {
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.leaderboard-content th,
+.leaderboard-content td {
+  padding: 12px 15px;
+}
+
+.leaderboard-content tbody tr {
+  border-bottom: 1px solid #000000;
+}
+
+.leaderboard-content tbody tr.active-row {
+  font-weight: bold;
+  background-color: lightpink;
+}
+
+.leaderboard-content img {
+  width: 10%;
+  top: 35%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+/*Leaderboard Page END */
+
+/* flashcards.html START*/
+
+.flashcard-options {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+
+
+}
+
+.flashcard-options p {
+  padding-top: 7%;
+  font-family: birra, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.flashcard-selection h3:hover {
+  opacity: 0.5;
+
+}
+
+
+.flashcard-selection {
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  top: 50%;
+  width: 350px;
+  height: 210px;
+  border-radius: 35px 0 35px 0;
+  border-style: solid;
+  border-color: #fff;
+  border-width: thick;
+  /* height is 0.6 x width */
+}
+
+
+#create-flashcard:hover,
+#practice-flashcard:hover {
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.flashcard-selection h3 {
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-decoration: none;
+  font-family: serif;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.notepad-box {
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  position: relative;
+
+}
+
+
+#create-flashcard {
+  background-color: #a5ffd6;
+  transition: 0.2s ease;
+
+}
+
+#practice-flashcard {
+  background-color: #a9def9;
+  transition: 0.2s ease;
+}
+
+
+#notepad-image img {
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width:1090px){
+  .flashcard-options {
+width: 90%;
+  
+  
+  }
+  .flashcard-options p {
+ 
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .flashcard-selection h3 {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-decoration: none;
+    font-family: serif;
+    font-style: italic;
+    font-size: 25px;
+  }
+  
+}
+@media screen and (max-width:500px){
+  .flashcard-options {
+width: 400px;
+  
+  
+  }
+  .flashcard-options p {
+ 
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .flashcard-selection h3 {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-decoration: none;
+    font-family: serif;
+    font-style: italic;
+    font-size: 25px;
+  }
+  
+}
+
+/* Flashards.html END */
+
+/* flashcardsAttempt START */
+.wrapper {
+  
+  height: 100%;
+
+}
+.QandA{
+padding-top: 15%;
+
+}
+#complete{
+  background-color:#bceaff;
+  width: 5%;
+  padding: 2%;
+  float: right;
+  border-radius: 15px 15px 15px 15px;
+  border: 8px solid #fff;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(78, 77, 77);
+
+
+}
+#complete:hover{
+  background-color:#60c6f5;
+}
+.questions{
+  width: 50%;
+  height: 90%;
+  transform: translate(30%, 0%);
+  text-align: center;
+  padding: 5%;
+  background-color:rgb(174, 248, 174);
+  border: 9px solid white;
+  border-radius: 0px 60px 0px 60px;
+
+}
+.TopicHeader{
+  text-align: center;
+  padding: 3%;
+}
+@media screen and (max-width:600px){
+  
+  .QandA{
+    padding-top: 30%;
+    
+    }
+    #complete{
+     font-size: 15px;
+    
+    
+    }
+}
+
+
+/* flashcardsAttempt END */
+
+/* flashcardsCreate.html START */
+
+.flashcard-create {
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  top: 50%;
+  width: 350px;
+  height: 210px;
+  border-radius: 35px 35px 35px 35px;
+  border-style: solid;
+  border-color: white;
+  text-align: center;
+}
+.flashcard-options input {
+  height: 4em;
+  width: 20em;
+  border: 4px solid #60c6f5;
+  border-radius: 10px 10px 10px 10px;
+
+}
+#topicTitle{
+
+  padding-top: 12%;
+  text-align: center;
+}
+#topicTitle input{
+
+
+  border:4px solid #60c6f5;
+  border-radius: 10px 10px 10px 10px;
+  height: 2em;
+  width: 15em;
+
+}
+#question-flashcard {
+  background-color: #a5ffd6;
+}
+
+#answer-flashcard {
+  background-color: #a9def9;
+
+}
+@media screen and (max-width:600px){
+
+  .flashcard-options input {
+    height: 4em;
+  
+  
+  }
+  .flashcard-options {
+    height: 100% ;
+  
+  
+  }
+  .flashcard-create {
+    padding-left: 50px;
+    padding-right: 50px;
+    top: 30%;
+    width: 70%;
+    height: 210px;
+
+  }
+  #topicTitle{
+
+    padding-top: 40%;
+    text-align: center;
+  }
+  #answer-flashcard {
+    padding-top: 1%;
+    transform: translate(-112%, 100%);
+    
+  }
+  
+  .flashcard-buttons {
+  
+    padding: 30px;
+  
+  }
+
+}
+
+/* .flashcard-buttons{
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  } */
+
+.flashcard-buttons {
+  top: 80%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 35px 35px 35px 35px;
+  border: solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.add-button {
+  background-color: #737DBB;
+
+  left: 19%;
+}
+
+.submit-button {
+  background-color: #D166D0;
+
+  left: 84%;
+}
+
+/* flashcardsCreate.html END */
+
+/* start of signin page */
+
+.signin-wrapper {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  right: 50%;
+  align-self: flex-start;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: none;
+  padding: 0px 0px 50px 50px;
+
+}
+
+.inputs>input {
+  height: 35px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 15px;
+  border-color: white;
+}
+
+/* end of signin page */
+
+/* Start of the Signup page */
+.signup-wrapper {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: block;
+
+}
+
+.signup-form input {
+  border: 0;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 13px 12px;
+  color: #626262;
+  width: 300px;
+  border-radius: 24px;
+}
+
+button {
+  border: 0;
+  display: block;
+  margin: 25px auto;
+  text-align: center;
+  padding: 14px 12px;
+  color: #626262;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* End of Signup Page */
+
+/* Start of profile Page */
+.profile-display {
+  padding-left: 50px;
+  padding-top: 13%;
+  position: absolute;
+  font-family:'Roboto', sans-serif ;
+  font-size: 15px;
+  
+}
+
+#disply-pic{
+
+}
+#flashcard-completion{
+  text-align: center;
+}
+
+#display-pic img {
+  width: 130px;
+  border-radius: 50%;
+}
+
+#score {
+  font-weight: bolder;
+  color: rgb(0, 70, 0);
+}
+
+.profile-content {
+  padding-top: 300px;
+  color: #000;
+  text-decoration: none;
+
+}
+
+
+
+
+.column {
+  float: left;
+  width: 10%;
+  padding: 2%;
+  transform: translate(90%, -50%);
+  top: 10em;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  background-color: #a9def9;
+  border-radius: 0px 10px 0px 10px;
+  border: 3px solid white;
+  text-decoration: none;
+
+
+}
+.column a{
+  color: #000;
+  text-decoration: none;
+  font-style: italic;
+
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+
+
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  top: 25%;
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
+
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.profile-headings{
+  text-align: center;
+}
+.profile-headings h3{
+  text-align: center;
+  font-size: 15px;
+}
+#profile-flashcards{
+  color: #000;
+  text-decoration: none;
+
+}
+@media screen and (max-width:1200px){
+  .profile-display {
+    padding-top: 15%;
+   
+    
+  }
+
+}
+/* @media screen and (max-width:1030px){
+  .profile-display {
+    padding-top: 17%;
+   
+    
+  }
+  
+} */
+@media screen and (max-width:600px){
+  .profile-display {
+    padding-top: 42%;
+
+  }
+  #profile-flashcards{
+   padding-top: 20%;
+  
+  }
+  .column {
+   
+    transform: translate(90%, -220%);
+    top: 10em;
+
+  
+  
+  }
+  
+}
+
+
+
+/* End of Profile Page */
+
+
+/* -----------------flashcardsMenu Page START--------------- */
+.card-wrapper {
+  position: relative;
+  top: 10%;
+  transform: translate(0%, 0%);
+  ;
+}
+
+.card {
+  background-color: #e4c1f9;
+  padding: 50px;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  position: relative;
+  border-radius: 50px 0 50px 0;
+  height: 25vh;
+  border: 7px solid #fff;
+
+}
+
+.card-cont {
+  position: relative;
+  top: 0;
+  background-color: #e4c1f9;
+  position: relative;
+  transform: translate(0%, 0%);
+  height: 30vh;
+
+}
+
+.card-cont h2 {
+  font-family: 'Roboto', sans-serif;
+  /* font-style: italic; */
+  position: relative;
+  top: -13%;
+  padding: 0px;
+  padding-left: 60px;
+  font-size: 45px;
+  color: rgb(141, 141, 141);
+}
+
+.card-search {
+
+  max-width: 30em;
+}
+
+/* test copy code */
+
+
+
+
+
+
+.searcher{
+  width: 50%;
+  height: 2em;
+  text-align: center;
+	border-radius: 10px 10px 10px 10px;
+}
+.search-bar input:focus,
+.search-bar input:valid {
+  background: rgb(255, 255, 255);
+  border: none;
+}
+
+
+#search-img{
+  width: 10%;
+  height: 2em;
+  border-radius: 5px 5px 5px 5px;
+
+  
+  
+}
+
+
+#search-img:hover {
+  
+  cursor: pointer;
+  background-color: rgb(173, 169, 169);
+  transition: ease 0.25s;
+  
+}
+
+/* test copy code end */
+.menu-button:hover {
+  background-color: #a9def9;
+}
+
+
+
+.menu-button {
+  position: relative;
+  float: center;
+  left: 260px;
+  top: -15%;
+  color: white;
+  float: center;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  background-color: rgb(145, 145, 145);
+  padding: 11px;
+  padding-right: 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.btn-del {
+  float: center;
+  top: 15%;
+  background-color: rgb(255, 98, 98);
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+.flashcard-card-text {
+  transform: translate(-50%, 50%);
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  top: 1%;
+  left: 5%;
+  padding-left: 20px;
+}
+
+.card-search-container {
+  width: 100%;
+  transform: translate(0%, -100%);
+  position: absolute;
+  top: 90%;
+}
+
+.card-search {
+  padding-top: 50px;
+  float: center;
+}
+
+
+
+@media screen and (max-width:600px){
+  .flashcard-card-text {
+    transform: translate(-50%, 50%);
+    position: relative;
+    top: 10%;
+    left: 5%;
+    padding-left: 20px;
+    
+  }
+  .menu-button {
+    position: relative;
+    float: center;
+    left: 0px;
+    top: -15%; 
+
+  }
+  .card-cont h2 {
+    
+    font-size: 30px;
+
+  }
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------flahscardsMenu Page END -----------------*/
+
+
+
+
+/* SIdemenu */
+
+
+ .current{
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: underline;
+  color: #737DBB;
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: -8vh;
+   left: 3%;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+   font-family: 'Roboto', sans-serif;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle li:hover
+ {
+   background-color: #fff;
+   color: rgb(163, 64, 147);
+   transition: ease 0.4s;
+   border-radius: 9px 9px 9px 9px;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #fff;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 20%;
+  height: 100vh;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   border: 10px solid #fff;
+   background-color: #fcbde9;
+   border-radius: 0 90px 0 0;
+   
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 15px;
+   font-size: 22px;
+ 
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up - YUZU</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ent7xro.css">
+  </head>
+  <body>
+    <header>
+      <div class="heading-graphic">
+        <h1>YUZU</h1>
+        <!-- logo -->
+        <img src="/imgs/home/Logoyuzu.png" alt="Logo">
+
+      </div>
+    </header>
+    
+    <div class="signup-wrapper">
+      <!-- sign up input data -->
+      <form class="signup-form" method="POST" action="/signin/registering">
+        <input id="firstname" type="text" name="firstname" value="" placeholder="First Name">
+        <input id="lastname" type="text" name="lastname" value="" placeholder="Last Name">
+        <input id="username" type="text" name="username" value="" placeholder="Username">
+        <input id="password" type="password" name="password" value="" placeholder="Password">
+        <input id="password2" type="password" name="password2" value=""  placeholder="Re-enter your password">
+        <input id="email" type="text" name="email" value="" placeholder="Email">
+        <p>In the event you forget your password, please fill in the security question.</p>
+        <input id="securityQuestion" type="text" name="securityQuestion" value="" placeholder="Security Question">
+        <input id="securityAnswer" type="text" name="securityAnswer" value="" placeholder="Security Answer">
+        <p>Please read and tick the box if you agree to our <a href="#popupbox">Terms and Conditions</a></p>
+        <input type="checkbox" name="termsConditionsCheckbox" checked="true" value=true>
+
+
+        <input type="submit" value="Sign Me Up!"/>
+      </form>
+    </div>
+
+    <div id="popupbox" class="overlay">
+      <div class="popup">
+        <h2>Terms and Conditions</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <!-- terms and conditions in popup -->
+          <p>Here are our terms and conditions:</p>
+          <p>- Your personal information will NOT be shared with any third-parties.</p>
+          <p>- We require your first name and last name for presenting on your profile page.</p>
+          <p>- We require a unique username and password for account use.</p>
+          <p>- Please note your password must:</p>
+          <p>-> Contain at least 8 characters</p>
+          <p>-> Contain an Uppercase character</p>
+          <p>-> Contain a Lowercase character</p>
+          <p>-> Contain a number</p>
+          <p>- We require email for updating you on your flashcards.</p>
+          <p>- We require security questions for keeping your account safe in the event you forget your password.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home - YUZU</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ent7xro.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="heading-graphic">
+        <h1>YUZU</h1>
+            <!-- logo -->
+            <img src="/imgs/home/Logoyuzu.png" alt="Logo">
+      </div>
+      
+      <nav role="navigation">
+        <div id="menuToggle">
+          
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <!-- nav bar -->
+            <a href="#"><li class = "current">Home</li></a>
+            <a href="/home"><li>Home</li></a>
+            <a href="/leaderboard"><li>Leaderboard</li></a>
+            <a href="/profile"><li>Profile</li></a>
+            <a href="/flashcards"><li>Flashcards</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+  <section class="button-containers">
+    <div class="button-pictures">
+        <div id = "round-buttons">
+          <!-- link to profile page -->
+            <p><a href="/profile">
+                <img src="imgs/Icons/profileIcon.jpg" alt="Profile Image" width="200px">
+                </a></p>
+                <!-- displays users name  -->
+            <p>@<%= userdetails.username %>'s Profile</p>
+        </div>
+    </div>
+    <div class="button-pictures">
+        <div id = "round-buttons">
+          <!-- link to flashcards page -->
+            <p><a href="/flashcards">
+                <img src="imgs/Icons/flashIcon.jpg" alt="flashcards" width="200px">
+                </a></p>
+            <p>Flashcards</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="button-containers2">
+    <div class="button-pictures">
+        <div id = "round-buttons">
+          <!-- link to leadrboard page -->
+            <p><a href="/leaderboard">
+
+                <img src="imgs/Icons/leaderIcon.jpg" alt="leaderboard" width="200px">
+                </a></p>
+            <p>Leaderboard</p>
+        </div>
+    </div>
+    <div class="button-pictures">
+      <div id = "round-buttons">
+        <!-- logout button to sign user out -->
+          <p><a href="/home/logout">
+              <img src="imgs/home/Logout-btn.png" alt="logout" width="200px">
+              </a></p>
+          <p>Log Out</p>
+      </div>
+  </div>
+
+  </section>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Attempt flashcards - YUZU</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ent7xro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+
+
+  </head>
+  <body>
+    <header>
+      <div class="heading-graphic">
+        <h1>YUZU</h1>
+            <!-- logo -->
+            <img src="/imgs/home/Logoyuzu.png" alt="Logo">
+      </div><br>
+      
+      <nav role="navigation">
+        <div id="menuToggle">
+          
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <!-- nav bar -->
+            <a href="#"><li class = "current">Attempt</li></a>
+            <a href="/home"><li>Home</li></a>
+            <a href="/leaderboard"><li>Leaderboard</li></a>
+            <a href="/profile"><li>Profile</li></a>
+            <a href="/flashcards"><li>Flashcards</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="QandA">
+        <div class = "TopicHeader">
+          <!-- load flashcard topic name -->
+        <h1><%= flashcard.topic %></h1>
+      </div>
+              <!-- for loop to display every flashcard questoion and answer in the array -->
+                <% flashcard.flashcard.forEach(flashcard =>{%>
+
+              <div class="questions">
+                <h3> Question: <%= flashcard.question%> </h3> <br>
+                <p>Answer: <%= flashcard.answer%>  </p>  
+              </div> 
+
+              <br>
+              <!-- close for loop -->
+              <% }) %>
+            </div>
+         <!-- link to home page when finished -->
+            <a id="complete" href="/home"> Done</a>
+
+
+      </div>
+
+        </div>
+
+  </body>
+</html>

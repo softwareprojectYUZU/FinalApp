@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Reset Password - YUZU</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ent7xro.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="heading-graphic">
+        <br>
+        <br>
+        <h1>YUZU</h1>
+        <!-- logo -->
+        <img src="/imgs/home/Logoyuzu.png" alt="Logo">
+      </div>
+    </header>
+
+    <div class="signup-wrapper">
+      <p>Hello, <%= userdetails.username %>. It seems you have forgotten your password!</p>
+      <br>
+      <p>To reset your password, please enter the answer to your security question:</p>
+      <br>
+      <p><%= userdetails.securityQuestion %>?</p>
+      <form class="signup-form" method="POST" action="/signin/resetpassword">
+        <input type="hidden" name="username" value=<%= userdetails.username %>>
+        <input id="securityAnswer" type="text" name="securityAnswer" value="" placeholder="Answer">
+        <input style="width: 60%;font-size: 18px;height:40px;" type="submit" value="Verify"/>
+      </form>
+    </div>
+
+  </body>
+</html>

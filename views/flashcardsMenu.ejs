@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flashcard menu - YUZU</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ent7xro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+          
+
+
+  </head>
+  <body>
+    <header>
+          <div class="heading-graphic">
+            <br>
+            <br>
+            <h1>YUZU</h1>
+            <!-- logo -->
+            <img src="/imgs/home/Logoyuzu.png" alt="Logo">
+          </div>
+
+          <nav role="navigation">
+            <div id="menuToggle">
+              
+              <input type="checkbox" />
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <!-- nav bar -->
+                <a href="#"><li class = "current">Menu</li></a>
+                <a href="/home"><li>Home</li></a>
+                <a href="/leaderboard"><li>Leaderboard</li></a>
+                <a href="/profile"><li>Profile</li></a>
+                <a href="/flashcards"><li>Flashcards</li></a>
+              </ul>
+            </div>
+          </nav>
+          <br>
+         
+            
+          </div>
+              <!-- Search bar -->
+              <center><div class="card-search-container">
+                <div class="card-search">
+                  <form class="search-bar" action="menu" method="GET" >
+                    <input type="text" id = "search" name="search" value="" placeholder="search for a topic..." class="searcher">
+                    <input type="submit" value="Search" id="search-img">
+                    
+                      
+                  </form>
+                </div></center>
+    </header>
+
+ 
+
+    <br>
+<!-- for loop to display all data of flashcards -->
+<% flashcards.forEach(flashcards =>{%>
+  <div class="card-wrapper">
+    <div class="card">
+    
+    <div class = "card-cont">
+      <!-- displays flashcard name -->
+      <h2><%= flashcards.topic %></h2>
+      <!-- displays flashcard size -->
+      <span class="flashcard-card-text" style="margin-left: auto;">Size of Flashcard: <%= flashcards.flashcard.length %></span> <br>
+      <!-- link to flashcard  -->
+      <a href="<%= flashcards.id %>" class = "menu-button" >Attempt this flashcard</a>
+      <!-- delete button to delete flashcard -->
+      <form action="<%= flashcards.id %>?_method=DELETE" method="POST"> 
+       
+        <button type="submit" class = "btn-del">Delete flashcard</button>
+
+      </form>
+    </div>
+  
+    <br>
+  </div>
+  </div>
+
+  <br>
+
+  <!-- end for loop -->
+<% }) %>
+      
+      <br>
+      <!-- link to main js -->
+      <script src ="/js/main.js"></script>
+  </body>
+  
+</html>

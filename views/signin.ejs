@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign In - YUZU</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ent7xro.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="heading-graphic">
+        <br>
+        <br>
+        <h1>YUZU</h1>
+        <!-- logo -->
+        <img src="/imgs/home/Logoyuzu.png" alt="yuzu logo">
+      </div>
+    </header>
+
+
+    <div class="signin-wrapper">
+      <!-- takes in users name and password all sent to back end -->
+      <form class="signup-form" method="POST" action="/signin/signingin">
+        <input id="username" type="text" name="username" value="" placeholder="Username">
+        <input id="password" type="password" name="password" value="" placeholder="Password">
+        <!-- sign in button -->
+        <input style="width: 60%;font-size: 18px;height:40px;" type="submit" value="Sign In"/>
+      </form>
+      <!-- forgot password button -->
+      <form action="#popupbox">
+        <input style="width: 60%;font-size: 18px;height:40px;" type="submit" value="Forgot Password?" />
+      </form>
+      <!-- sign up button -->
+      <form action="/signin/register">
+        <input style="width: 60%;font-size: 18px;height:40px;" type="submit" value="Sign Up!" />
+      </form>
+    </div>
+    <!-- pop up box takes username -->
+    <div id="popupbox" class="overlay">
+      <div class="popup">
+        <h2>Please Type your Username</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <!-- checks username by sending data to back end -->
+          <form method="POST" action="/signin/verifyaccount">
+              <input id="username" type="text" name="username" value="" placeholder="Username">
+              <br>
+              <!-- reset password button -->
+              <input type="submit" value="Reset Password"/>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
